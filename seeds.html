@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisan Sathi - Seeds & Fertilizers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="seeds.css">
+</head>
+<body>
+    <header>
+        <img src="kisan sathi logo.png" alt="kisan sathi" style="width: 100; height: 50px; border: #2e7d32 solid 1.5px; border-radius: 4px;">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seeds.html">Crops</a></li>
+                <li><a href="booking.html">Vehicle Booking</a></li>
+                <li><a href="suggestion.html">Crop Suggestion</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <div class="cart-icon" id="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1 class="page-title">Seeds & Fertilizers Store</h1>
+        
+        <div class="tabs">
+            <div class="tab active" data-category="seeds">Seeds</div>
+            <div class="tab" data-category="fertilizers">Fertilizers</div>
+        </div>
+        
+        <div class="products-grid" id="products-grid">
+            <!-- Seeds Products -->
+            <div class="product-card" data-category="seeds">
+                <div class="product-image">
+                    <img src="tomatoseeds.jpeg" alt="Tomato Seeds">
+                </div>
+                <div class="product-details">
+                    <div class="product-name">Hybrid Tomato Seeds</div>
+                    <div class="product-category">Vegetable Seeds</div>
+                    <div class="product-price">₹120.00<span>₹150.00</span></div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="1">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="seeds">
+                <div class="product-image">
+                    <img src="basmathirice.jpeg" alt="Rice Seeds">
+                </div>
+                <div class="product-details">
+                    <div class="product-name">Basmati Rice Seeds</div>
+                    <div class="product-category">Grain Seeds</div>
+                    <div class="product-price">₹180.00<span>₹220.00</span></div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="2">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="seeds">
+                <div class="product-image">
+                    <img src="cottonseeds.jpeg" alt="Cotton Seeds">
+                </div>
+                <div class="product-details">
+                    <div class="product-name">BT Cotton Seeds</div>
+                    <div class="product-category">Fiber Seeds</div>
+                    <div class="product-price">₹750.00<span>₹850.00</span></div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="3">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="seeds">
+                <div class="product-image">
+                    <img src="chilliseeds.jpeg" alt="Chilli Seeds">
+                </div>
+                <div class="product-details">
+                    <div class="product-name">Hybrid Chilli Seeds</div>
+                    <div class="product-category">Vegetable Seeds</div>
+                    <div class="product-price">₹150.00<span>₹180.00</span></div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="4">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Fertilizer Products -->
+            <div class="product-card" data-category="fertilizers" style="display: none;">
+                <div class="product-image">
+                    <img src="NPK.jpeg" alt="NPK Fertilizer">
+                </div>
+                <div class="product-details">
+                    <div class="product-name">NPK 19:19:19 Fertilizer</div>
+                    <div class="product-category">Complex Fertilizer</div>
+                    <div class="product-price">₹1200.00<span>₹1350.00</span></div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="5">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="fertilizers" style="display: none;">
+                <div class="product-image">
+                    <img src="DAP.jpeg" alt="DAP Fertilizer">
+                </div>
+                <div class="product-details">
+                    <div class="product-name">DAP Fertilizer</div>
+                    <div class="product-category">Phosphatic Fertilizer</div>
+                    <div class="product-price">₹1100.00<span>₹1250.00</span></div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="6">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="fertilizers" style="display: none;">
+                <div class="product-image">
+                    <img src="vermicompost.jpeg" alt="Vermicompost">
+                </div>
+                <div class="product-details">
+                    <div class="product-name">Organic Vermicompost</div>
+                    <div class="product-category">Organic Fertilizer</div>
+                    <div class="product-price">₹400.00<span>₹500.00</span></div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="7">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="fertilizers" style="display: none;">
+                <div class="product-image">
+                    <img src= "urea.jpeg" alt="Urea Fertilizer">
+                </div>
+                <div class="product-details">
+                    <div class="product-name">Urea Fertilizer</div>
+                    <div class="product-category">Nitrogenous Fertilizer</div>
+                    <div class="product-price">₹300.00<span>₹350.00</span></div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="add-to-cart" data-id="8">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be loaded here dynamically -->
+            <div class="empty-cart-message">Your cart is empty</div>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">₹0.00</span>
+            </div>
+           <form id="bookingForm">
+    <input type="text" id="name" placeholder="Your Name" required><br><br>
+    <input type="text" id="phone" placeholder="Phone Number" required><br><br>
+    <input type="text" id="product" placeholder="Product Name (Seed/Fertilizer)" required><br><br>
+    <input type="number" id="quantity" placeholder="Quantity (Kg/Ltrs)" required><br><br>
+    <textarea id="address" placeholder="Delivery Address" required></textarea><br><br>
+    <select id="paymentMethod" required>
+      <option value="" disabled selected>Select Payment Method</option>
+      <option value="UPI">UPI</option>
+      <option value="COD">Cash on Delivery</option>
+    </select><br><br>
+
+    <button type="button" class="checkout-btn">Proceed to Checkout</button>
+    <p id="msg"></p>
+  </form>
+
+  <!-- Shipping form (hidden initially) -->
+  <form id="shippingForm" style="display:none; margin-top: 30px;">
+    <h3>Shipping Details</h3>
+    <input type="text" id="shipFullName" placeholder="Full Name" required><br><br>
+    <input type="text" id="shipAddress" placeholder="Shipping Address" required><br><br>
+    <input type="text" id="shipCity" placeholder="City" required><br><br>
+    <input type="text" id="shipState" placeholder="State" required><br><br>
+    <input type="text" id="shipZip" placeholder="ZIP Code" required><br><br>
+    <button type="submit">Submit Shipping Info</button>
+    <p id="shipMsg"></p>
+  </form>
+
+  <!-- Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD9C_wa_6l-GwL9wMbYmB4CDRtVEFxg8_k",
+      authDomain: "kisan-saathi-b2b38.firebaseapp.com",
+      projectId: "kisan-saathi-b2b38",
+      storageBucket: "kisan-saathi-b2b38.firebasestorage.app",
+      messagingSenderId: "593295749221",
+      appId: "1:593295749221:web:774b3910f49c00c6edd68c",
+      measurementId: "G-WXKWKM9EQ7"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const checkoutBtn = document.querySelector('.checkout-btn');
+    const bookingForm = document.getElementById('bookingForm');
+    const shippingForm = document.getElementById('shippingForm');
+
+    checkoutBtn.addEventListener('click', () => {
+      // Hide the booking button and show the shipping form
+      shippingForm.style.display = 'block';
+    });
+
+    shippingForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Collect booking info
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const product = document.getElementById('product').value;
+      const quantity = document.getElementById('quantity').value;
+      const address = document.getElementById('address').value;
+      const paymentMethod = document.getElementById('paymentMethod').value;
+
+      // Collect shipping info
+      const shipFullName = document.getElementById('shipFullName').value;
+      const shipAddress = document.getElementById('shipAddress').value;
+      const shipCity = document.getElementById('shipCity').value;
+      const shipState = document.getElementById('shipState').value;
+      const shipZip = document.getElementById('shipZip').value;
+
+      try {
+        await addDoc(collection(db, "bookings"), {
+          name,
+          phone,
+          product,
+          quantity,
+          address,
+          paymentMethod,
+          shippingDetails: {
+            fullName: shipFullName,
+            address: shipAddress,
+            city: shipCity,
+            state: shipState,
+            zip: shipZip
+          },
+          timestamp: new Date()
+        });
+
+        document.getElementById('msg').innerText = "Booking & Shipping successful!";
+        document.getElementById('shipMsg').innerText = "";
+        bookingForm.reset();
+        shippingForm.reset();
+        shippingForm.style.display = "none";
+      } catch (err) {
+        document.getElementById('shipMsg').innerText = "Error: " + err.message;
+      }
+    });
+  </script>
+
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    <footer class="footer">
+        <p>&copy; 2025 Kisan Sathi | All rights reserved.</p>
+        <p>contact-us : kisansathi@gmail.com | wwww.kisansathi.com</p>
+      </footer>
+    
+    <script src="seeds.js"></script>
+</body>
+</html>

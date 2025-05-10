@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisan Sathi - Vehicle Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <img src="kisan sathi logo.png" alt="logo">
+        <nav>
+          <i class="fa-solid fa-house"></i>
+          <a href="index.html">Home</a>
+          <a href="seeds.html">Crops</a>
+          <a href="booking.html">Vehicle Booking</a>
+          <a href="suggestion.html">Crop Suggestion</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Kisan Sathi Vehicle Booking</h1>
+        
+        <!-- Vehicle Selection Section -->
+        <div class="row" id="vehicle-selection">
+            <h2 class="mb-4">Available Vehicles</h2>
+            
+            <!-- Tractor Card -->
+            <div class="col-md-4">
+                <div class="card vehicle-card">
+                    <img src="tractor.jpeg" class="card-img-top" alt="Tractor">
+                    <div class="vehicle-details">
+                        <h5>Tractor Details</h5>
+                        <p><strong>Model:</strong> John Deere 5050D</p>
+                        <p><strong>Vehicle No:</strong> UP70 AB 1234</p>
+                        <p><strong>Rate:</strong> ₹500/hour</p>
+                        <p><strong>Capacity:</strong> 50 HP</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tractor</h5>
+                        <button class="btn btn-primary select-vehicle" data-vehicle="tractor" data-rate="500">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cultivator Card -->
+            <div class="col-md-4">
+                <div class="card vehicle-card">
+                    <img src="cultivator.jpeg" class="card-img-top" alt="Red cultivator with multiple sharp tines designed for soil preparation, displayed in a clean and bright environment">
+                    <div class="vehicle-details">
+                        <h5>Cultivator Details</h5>
+                        <p><strong>Model:</strong> Shaktiman 9 Tine</p>
+                        <p><strong>Vehicle No:</strong> UP70 CD 5678</p>
+                        <p><strong>Rate:</strong> ₹300/hour</p>
+                        <p><strong>Width:</strong> 6 feet</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cultivator</h5>
+                        <button class="btn btn-primary select-vehicle" data-vehicle="cultivator" data-rate="300">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sparyer -->
+            <div class="col-md-4">
+                <div class="card vehicle-card">
+                    <img src="sprayer.jpeg" class="card-img-top" alt="Sprayer">
+                    <div class="vehicle-details">
+                        <h5>Sprayer Details</h5>
+                        <p><strong>Model:</strong> John deere 450</p>
+                        <p><strong>Vehicle No:</strong> UP70 DC 5678</p>
+                        <p><strong>Rate:</strong> ₹400/hour</p>
+                        <p><strong>Width:</strong> 6 feet</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cultivator</h5>
+                        <button class="btn btn-primary select-vehicle" data-vehicle="sprayer" data-rate="400">Book Now</button>
+                    </div>
+                </div>
+            </div>
+                <!-- seed drill -->
+            <div class="col-md-4">
+                <div class="card vehicle-card">
+                    <img src="seed drill.jpeg" class="Seed driller" alt="Cultivator">
+                    <div class="vehicle-details">
+                        <h5>Seed Driller Details</h5>
+                        <p><strong>Model:</strong> Shaktiman 9 Tine</p>
+                        <p><strong>Vehicle No:</strong> UP70 CD 5678</p>
+                        <p><strong>Rate:</strong> ₹500/hour</p>
+                        <p><strong>Width:</strong> 6 feet</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cultivator</h5>
+                        <button class="btn btn-primary select-vehicle" data-vehicle="seed driller" data-rate="500">Book Now</button>
+                    </div>
+                </div>
+            </div>
+                <!-- tiller -->
+            <div class="col-md-4">
+                <div class="card vehicle-card">
+                    <img src="tiller.jpeg" class="card-img-top" alt="Tiller">
+                    <div class="vehicle-details">
+                        <h5>Tiller Details</h5>
+                        <p><strong>Model:</strong> Shaktiman 9 Tine</p>
+                        <p><strong>Vehicle No:</strong> UP70 CD 5678</p>
+                        <p><strong>Rate:</strong> ₹250/hour</p>
+                        <p><strong>Width:</strong> 6 feet</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cultivator</h5>
+                        <button class="btn btn-primary select-vehicle" data-vehicle="Tiller" data-rate="250">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Harvester Card -->
+            <div class="col-md-4">
+                <div class="card vehicle-card">
+                    <img src="harvester.jpeg" class="card-img-top" alt="Harvester">
+                    <div class="vehicle-details">
+                        <h5>Harvester Details</h5>
+                        <p><strong>Model:</strong> Kubota PRO 488</p>
+                        <p><strong>Vehicle No:</strong> UP70 EF 9012</p>
+                        <p><strong>Rate:</strong> ₹1200/hour</p>
+                        <p><strong>Capacity:</strong> 1.5 acres/hour</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Harvester</h5>
+                        <button class="btn btn-primary select-vehicle" data-vehicle="harvester" data-rate="1200">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Booking Form Section -->
+        <div class="booking-form mt-5" id="booking-form" style="display: none;">
+            <h2 class="mb-4">Booking Details</h2>
+            <div class="row">
+                <body class="container mt-5">
+
+  <div class="booking-form" id="booking-form">
+    <h2 class="mb-4">Booking Details</h2>
+    <form id="bookingDetails">
+      <div class="mb-3">
+        <label for="vehicle-type" class="form-label">Vehicle Type</label>
+        <input type="text" class="form-control" id="vehicle-type" value="Tractor" readonly>
+      </div>
+      <div class="mb-3">
+        <label for="hours" class="form-label">Number of Hours</label>
+        <input type="number" class="form-control" id="hours" min="1" value="1" required>
+      </div>
+      <div class="mb-3">
+        <label for="date" class="form-label">Booking Date</label>
+        <input type="date" class="form-control" id="date" required>
+      </div>
+      <div class="mb-3">
+        <label for="location" class="form-label">Farm Location</label>
+        <input type="text" class="form-control" id="location" required placeholder="Enter your farm address">
+      </div>
+      <div class="mb-3">
+        <label for="contact" class="form-label">Contact Number</label>
+        <input type="tel" class="form-control" id="contact" required placeholder="Enter your phone number">
+      </div>
+      <button type="submit" class="btn btn-success">Proceed to Payment</button>
+      <p id="msg" class="mt-3"></p>
+    </form>
+  </div>
+
+  <!-- Firebase SDK (v11 modular) -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyD9C_wa_6l-GwL9wMbYmB4CDRtVEFxg8_k",
+      authDomain: "kisan-saathi-b2b38.firebaseapp.com",
+      projectId: "kisan-saathi-b2b38",
+      storageBucket: "kisan-saathi-b2b38.appspot.com",
+      messagingSenderId: "593295749221",
+      appId: "1:593295749221:web:774b3910f49c00c6edd68c",
+      measurementId: "G-WXKWKM9EQ7"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const form = document.getElementById('bookingDetails');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const vehicleType = document.getElementById('vehicle-type').value;
+      const hours = document.getElementById('hours').value;
+      const bookingDate = document.getElementById('date').value;
+      const location = document.getElementById('location').value;
+      const contact = document.getElementById('contact').value;
+
+      try {
+        await addDoc(collection(db, "vehicleBookings"), {
+          vehicleType,
+          hours: parseInt(hours),
+          bookingDate,
+          location,
+          contact,
+          timestamp: new Date()
+        });
+        document.getElementById('msg').innerText = "Booking successful! Redirecting to payment...";
+        form.reset();
+        // You can add redirection to payment page here
+        // window.location.href = "payment.html";
+      } catch (err) {
+        document.getElementById('msg').innerText = "Error: " + err.message;
+      }
+    });
+  </script>
+
+                <div class="col-md-6">
+                    <div class="booking-summary">
+                        <h4>Booking Summary</h4>
+                        <hr>
+                        <p><strong>Vehicle:</strong> <span id="summary-vehicle">-</span></p>
+                        <p><strong>Rate:</strong> ₹<span id="summary-rate">0</span>/hour</p>
+                        <p><strong>Hours:</strong> <span id="summary-hours">1</span></p>
+                        <hr>
+                        <h5>Total: ₹<span id="summary-total">0</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Payment Section -->
+        <div class="payment-section mt-5" id="payment-section">
+            <h2 class="mb-4">Payment</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Payment Details</h5>
+                            <form id="paymentForm">
+                                <div class="mb-3">
+                                    <label for="card-number" class="form-label">Card Number</label>
+                                    <input type="text" class="form-control" id="card-number" placeholder="1234 5678 9012 3456" required>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="expiry-date" class="form-label">Expiry Date</label>
+                                        <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="cvv" class="form-label">CVV</label>
+                                        <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name-on-card" class="form-label">Name on Card</label>
+                                    <input type="text" class="form-control" id="name-on-card" required>
+                                </div>
+                                <button type="button" class="btn btn-success" id="confirm-payment">Confirm Payment</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="booking-summary">
+                        <h4>Order Summary</h4>
+                        <hr>
+                        <p><strong>Vehicle:</strong> <span id="payment-vehicle">-</span></p>
+                        <p><strong>Date:</strong> <span id="payment-date">-</span></p>
+                        <p><strong>Location:</strong> <span id="payment-location">-</span></p>
+                        <p><strong>Hours:</strong> <span id="payment-hours">-</span></p>
+                        <hr>
+                        <h5>Total: ₹<span id="payment-total">0</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Confirmation Section -->
+        <div class="confirmation-section mt-5 text-center" id="confirmation-section">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="text-success mb-4">Booking Confirmed!</h2>
+                    <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
+                    <p class="mt-3">Thank you for your booking with Kisan Sathi.</p>
+                    
+                    <div class="confirmation-details mt-4">
+                        <h4>Booking Details</h4>
+                        <hr>
+                        <p><strong>Transaction ID:</strong> <span id="transaction-id">KS789456123</span></p>
+                        <p><strong>Vehicle:</strong> <span id="confirm-vehicle">-</span></p>
+                        <p><strong>Estimated Arrival Time:</strong> <span id="arrival-time">Within 2 hours</span></p>
+                        <p><strong>Total Paid:</strong> ₹<span id="confirm-total">0</span></p>
+                    </div>
+                    
+                    <button class="btn btn-primary mt-4" id="new-booking">Make Another Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+
+        <p>&copy; 2025 Kisan Sathi | All rights reserved.</p>
+        <p>contact-us : kisansathi@gmail.com | wwww.kisansathi.com</p>
+      </footer>
+    
+    
+    <script src="booking.js"></script>
+</body>
+</html>

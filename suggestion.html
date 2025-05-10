@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Suggestion</title>
+    <link rel="stylesheet" href="suggestion.css">
+</head>
+<body>
+   <header>
+        <img src="kisan sathi logo.png" alt="logo">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="seeds.html">Crops</a>
+          <a href="booking.html">Vehicle Booking</a>
+          <a href="suggestion.html">Crop Suggestion</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+    
+    
+    <main>
+        <h2>Crop Suggestion</h2>
+        <div class="district">
+        <label for="district">District:</label>
+    <select id="district">
+        <option value="">-- Select District --</option>
+        <option>Adilabad</option>
+        <option>Bhadradri Kothagudem</option>
+        <option>Hyderabad</option>
+        <option>Jagtial</option>
+        <option>Jangaon</option>
+        <option>Jayashankar Bhupalpally</option>
+        <option>Jogulamba Gadwal</option>
+        <option>Kamareddy</option>
+        <option>Karimnagar</option>
+        <option>Khammam</option>
+        <option>Komaram Bheem Asifabad</option>
+        <option>Mahabubabad</option>
+        <option>Mahabubnagar</option>
+        <option>Mancherial</option>
+        <option>Medak</option>
+        <option>Medchal-Malkajgiri</option>
+        <option>Mulugu</option>
+        <option>Nagarkurnool</option>
+        <option>Nalgonda</option>
+        <option>Narayanpet</option>
+        <option>Nirmal</option>
+        <option>Nizamabad</option>
+        <option>Peddapalli</option>
+        <option>Rajanna Sircilla</option>
+        <option>Rangareddy</option>
+        <option>Sangareddy</option>
+        <option>Siddipet</option>
+        <option>Suryapet</option>
+        <option>Vikarabad</option>
+        <option>Wanaparthy</option>
+        <option>Warangal Urban</option>
+        <option>Warangal Rural</option>
+        <option>Yadadri Bhuvanagiri</option>
+    </select>
+    </div>
+    
+    <div class="button">
+        <button onclick="suggestCrop()">Suggest Crop</button>
+    </div>
+    
+    <div id="result"></div>
+    </main>
+
+    <footer class="footer">
+
+        <p>&copy; 2025 Kisan Sathi | All rights reserved.</p>
+        <p>contact-us : kisansathi@gmail.com | wwww.kisansathi.com</p>
+
+    </footer>
+    <script src="suggestion.js"></script>
+    
+</body>
+</html>
